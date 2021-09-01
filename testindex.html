@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name ="viewport" content  = "width=device-width" charset="UTF-8">
+    <title>test</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+    <link rel ="stylesheet" type = "text/css" href="default.css">
+
+    <link id="theme-style" rel="stylesheet" type="text/css" href="">
+
+</head>
+<body>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+    <section class = "s1">
+        <div class = "main-container">
+            <div class = "greeting-wrapper">
+                <h1>Hi, I'm Andrew</h1>
+            </div>
+
+
+            <div class = "intro-wrapper">
+                <div class = "nav-wrapper">
+                   <div class="link">
+                        <a class = "navLink" href = "#about">About</a>
+                   </div>
+
+                   <div class="link">
+                        <a class = "navLink" href = "#interests">Interests</a>
+                   </div>
+
+                   <div class="link">
+                        <a class = "navLink" href = "#contact">Contact</a>
+                   </div>
+
+                </div>
+                <div class = "left-column">
+                    <div class = "profile_pic">
+
+                    </div>
+
+                    <h5 style="text-align:center;line-height:0;">Personalise theme</h5>
+
+                    <div id = "theme-options-wrapper">
+
+                        <div data-mode="light" id = "light-mode" class = "theme-dot"></div>
+                        <div data-mode="blue" id = "blue-mode" class = "theme-dot"></div>
+                        <div data-mode="green" id = "green-mode" class = "theme-dot"></div>
+                        <!--<div data-mode="light" id = "aesthetic_mode" class = "theme-image">
+                            <img  style='height: 100%; width: 100%; object-fit: contain; border-radius: 50%;' src="Images/bust-mini.jpg">
+                             <p class="image-description">(Under Construction)This auto-plays music too.</p>
+                        </div>-->
+                    </div>
+                </div>
+                <div class = "right-column">
+                     <div id="preview-shadow">
+                        <div id="preview">
+                            <div id = "tl" class = "corner"></div>
+                            <div id = "tr" class = "corner"></div>
+                            <h3>Who am I?</h3>
+                            <p> I am an astrophysics post-grad who likes to take on lots of different projects.</p>
+                            <div id = "bl" class = "corner"></div>
+                            <div id = "br" class = "corner"></div>
+
+                        </div>
+                    </div>
+            </div>
+        </div>
+        </div>
+    </section>
+    <section id = "about" class = "s2">
+        <div class = "main-container">
+            <div class = "about-wrapper">
+                <div class = "about-me">
+                    <h4>More about me</h4>
+                    <p>Astrophysicist who has specialised in the study of asteroids in the main-belt.</p>
+                    <p>I like to try interesting projects in many fields:
+                        Coding, Mechanics, Electronics, Languages.
+                        I am always searching for something to take apart and put back together,
+                        hopefully in the right way too.</p>
+
+
+                    <h4>Areas of Expertise</h4>
+
+                    <p> My CV is available here:<a class = "simple-link" target="_blank" href="CV.pdf"> Download CV</a></p>
+
+                    <div id="skills">
+                        <ul>
+                            <li>Python</li>
+                            <li>C++</li>
+                            <li>Julia</li>
+                            <li>LaTeX</li>
+                        </ul>
+                         <ul>
+                            <li>Physics</li>
+                            <li>Data Analysis</li>
+                            <li>French</li>
+                        </ul>
+
+                    </div>
+
+                </div>
+
+
+                <div class = "social-media">
+                    <img id="social-image" src = "Images/socialmedia.png">
+                    <h3>See all the source code of my projects on Github!</h3>
+                    <a class = "simple-link"   target="_blank" href="https://github.com/AndrewMarshall-Lee">Github</a>
+                    <a class = "simple-link"  target="_blank" href="https://www.linkedin.com/in/andrew-marshall-lee-b627ab166/">LinkedIn</a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+   <section id = "interests" class = "s1">
+        <div class = "main-container">
+            <h3 style="text-align:center;">My Interests</h3>
+            <div class = "post-wrapper">
+
+                <section class = "project">
+>                   <a href="software.html">
+                        <img class = "section-image" src = "Images/programming.png">
+                    </a>
+
+                </section>
+                <section class = "project">
+                      <a href="#">
+                        <img class = "section-image" src = "Images/projects.png">
+                    </a>
+                </section>
+                <section class = "project"> <a href="#">
+                        <img class = "section-image" src = "Images/music.png">
+                    </a>
+                </section>
+
+            </div>
+
+            </div>
+        </div>
+   </section>
+   <section id = "contact" class = "s2">
+        <div class = "main-container">
+            <h3 style = "text-align:center;">Get In Touch</h3>
+
+            <form id="contact-form" action="contact-form-handle.php" method="post">
+                <label>Name</label>
+                <input class="input-field" type="text" name = "name">
+
+                <label>Email</label>
+                <input class="input-field" type="text" name = "Email">
+
+                <label>Subject</label>
+                <input class="input-field" type="text" name = "subject">
+
+
+
+                <label>Message</label>
+                <textarea class="input-field"  name = "message"></textarea>
+
+                <input id="submit-button"  type="submit" value="Send">
+            </form>
+        </div>
+   </section>
+
+<script type="text/javascript" src="script.js"></script>
+</body>
+</html>

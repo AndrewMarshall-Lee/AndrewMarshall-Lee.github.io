@@ -163,7 +163,7 @@ h6 {font-size: 16px;}
 }
 
 @keyframes slide{
-    30%{
+    10%{
         background:url(Images/drum.jpg);
 
     }

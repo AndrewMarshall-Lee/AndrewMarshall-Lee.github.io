@@ -155,7 +155,6 @@ h6 {font-size: 16px;}
 
 
     animation: slide 30s infinite;
-    transition:300ms;
 
     border:2px solid var(--borderColour);
     -webkit-box-shadow: 1px 1px 3px -1px rgba(0,0,0,0.78);
